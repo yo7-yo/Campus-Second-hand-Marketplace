@@ -1,0 +1,27 @@
+# IDE
+.idea/
+*.iml
+
+# Java
+target/
+*.class
+*.jar
+*.war
+*.ear
+logs/
+uploads/
+
+# Node
+node_modules/
+dist/
+.DS_Store
+*.local
+
+# OS
+desktop.ini
+Thumbs.db
+*.lnk
+
+# Env
+.env
+.env.local

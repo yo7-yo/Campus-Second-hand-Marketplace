@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=SecondHandDB;encrypt=true;trustServerCertificate=true
+    username: 111111
+    password: 111111
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+logging:
+  level:
+    root: info
+    com.example.secondhand: debug
+  file:
+    name: logs/secondhand.log
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
